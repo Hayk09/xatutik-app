@@ -1,32 +1,30 @@
 import React from "react";
-import {
-  Text,
-  Flex,
-  Image,
-  HStack,
-  Spinner,
-  Button,
-  VStack,
-} from "native-base";
+import { Flex, Image, HStack, Spinner, Button } from "native-base";
 import { images } from "../../constants";
 
 const Home = ({ navigation }) => {
   return (
-    <Flex flex={1} justifyContent="center" alignItems="center" bg="white">
-      <VStack space={105}>
-        <Image source={images.thumb_logo} alt="ll" />
+    <Flex
+      flex={1}
+      justifyContent="space-between"
+      alignItems="center"
+      bg="white"
+      padding={10}
+    >
+      <Image source={images.thumb_logo} alt="ll" />
+      <Flex>
         <HStack space={16} justifyContent="center">
           {/* <Spinner color="green.500" size="lg" /> */}
         </HStack>
         <Button
-          bg="green.400"
-          w="300"
-          borderRadius={8}
+          w={350}
+          colorScheme="green"
+          borderRadius={12}
           onPress={() => navigation.navigate("first")}
         >
           Next
         </Button>
-      </VStack>
+      </Flex>
     </Flex>
   );
 };

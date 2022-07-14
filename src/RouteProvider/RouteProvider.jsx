@@ -5,6 +5,7 @@ import Home from "../pages/HomePage";
 import FirstPage from "../pages/FirstPage";
 import SecondPage from "../pages/SecondPage";
 import SignIn from "../pages/SignIn";
+import Description from "../pages/DescriptionPage";
 
 const RouteProvider = () => {
   const Stack = createNativeStackNavigator();
@@ -23,6 +24,7 @@ const RouteProvider = () => {
         <Stack.Screen name="first" component={FirstPage} />
         <Stack.Screen name="second" component={SecondPage} />
         <Stack.Screen name="signin" component={SignIn} />
+        <Stack.Screen name="description" component={Description} />
       </Stack.Navigator>
     </NavigationContainer>
   );

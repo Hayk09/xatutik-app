@@ -13,10 +13,10 @@ const FirstPage = ({ navigation }) => {
             Welcome to Xatutik
           </Text> */}
           <Button
-            mt={39}
+            mt={10}
+            w={350}
             colorScheme="green"
-            w="300"
-            borderRadius={8}
+            borderRadius={12}
             onPress={() => navigation.navigate("second")}
           >
             Next
